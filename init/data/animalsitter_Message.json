@@ -1,0 +1,30 @@
+[
+    {
+      "name": "animalsitter\\Message",
+      "lang": "en",
+      "data": [
+        {
+          "id": 1,
+          "sender_id" : 1,
+          "responder_id" : 3,
+          "content" : "Hello, Madeleine tu peux garder mon chat?",
+          "app_users_ids" : [1,3]
+        },
+        {
+          "id": 2,
+          "sender_id":1,
+          "responder_id" : 3,
+          "content" : "stp?",
+          "app_users_ids" : [1,3]
+
+        },
+        {
+          "id": 3,
+          "sender_id": 3,
+          "responder_id": 1,
+          "content" : "Oui mais quand?",
+          "app_users_ids" : [3,1]
+        }
+      ]
+    }
+  ]

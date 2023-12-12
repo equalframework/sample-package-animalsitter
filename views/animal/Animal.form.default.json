@@ -1,0 +1,95 @@
+{
+    "name": "Animal",
+    "description": "Simple form to create animals",
+    "actions": [],
+    "layout": {
+        "groups": [
+            {
+                "id": "group.0",
+                "sections": [
+                    {
+                        "label" : "Animal",
+                        "id": "section.0",
+                        "rows": [
+                            {
+                                "id": "row.0",
+                                "columns": [
+                                    {
+                                        "id": "column.0",
+                                        "width": "80%",
+                                        "items": [
+                                            {
+                                                "type": "field",
+                                                "value": "id",
+                                                "width": "5%",
+                                                "readonly": true
+                                            },
+                                            {
+                                                "type": "field",
+                                                "value": "name",
+                                                "width": "20%",
+                                                "label": "Name"
+                                            },
+                                            {
+                                                "type": "field",
+                                                "value": "picture",
+                                                "width": "40%",
+                                                "label": "Picture"
+                                            },
+                                            {
+                                                "type": "field",
+                                                "value": "birthday",
+                                                "width": "20%"
+                                            },
+                                            {
+                                                "type": "field",
+                                                "value": "color",
+                                                "width": "20%"
+                                            },
+                                            {
+                                                "type": "field",
+                                                "value": "app_user_id",
+                                                "width": "20%"
+                                            },
+                                            {
+                                                "type": "field",
+                                                "value": "age",
+                                                "width": "20%",
+                                                "widget": {
+                                                    "visible": ["birthday", ">", 0]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Sittings",
+                        "id": "section.project.sittings",
+                        "rows": [
+                            {
+                                "id": "row.11",
+                                "columns": [
+                                    {
+                                        "id": "column.11",
+                                        "width": "100%",
+                                        "items": [
+                                            {
+                                                "type": "field",
+                                                "value": "sittings_ids",
+                                                "width": "100%",
+                                                "label": "Sittings"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

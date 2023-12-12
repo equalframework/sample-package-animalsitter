@@ -1,0 +1,85 @@
+{
+    "name": "Messages",
+    "description": "",
+    "layout": {
+        "groups": [
+            {
+                "label": "New Group",
+                "id": "group.0",
+                "sections": [
+                    {
+                        "label": "Create a message",
+                        "id": "section.0",
+                        "rows": [
+                            {
+                                "id": "row.0",
+                                "label": "New Row",
+                                "columns": [
+                                    {
+                                        "id": "column.1",
+                                        "label": "New Column",
+                                        "width": "100%",
+                                        "items": [
+                                            {
+                                                "type": "field",
+                                                "value": "sender_id",
+                                                "width": "25%",
+                                                "label": "from"
+                                            },
+                                            {
+                                                "type": "field",
+                                                "value": "responder_id",
+                                                "width": "25%",
+                                                "label": "to",
+                                                "widget": {
+                                                    "domain": [
+                                                        [
+                                                            [
+                                                                "is_pet_sitter",
+                                                                "=",
+                                                                true
+                                                            ],
+                                                            [
+                                                                "id",
+                                                                "<>",
+                                                                "object.sender_id"
+                                                            ]
+                                                        ]
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "type": "field",
+                                                "value": "modified",
+                                                "width": "20%"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "row.1",
+                                "label": "New Row",
+                                "columns": [
+                                    {
+                                        "id": "column.2",
+                                        "label": "New Column",
+                                        "width": "100%",
+                                        "items": [
+                                            {
+                                                "type": "field",
+                                                "value": "content",
+                                                "width": "100%",
+                                                "widget": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
